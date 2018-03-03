@@ -7,3 +7,4 @@ gradle/
 gradlew
 *-signing.properties
 *.gpg
+.DS_Store

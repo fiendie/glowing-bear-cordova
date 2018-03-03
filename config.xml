@@ -8,23 +8,9 @@
         Lorenz Hübschle-Schneider
     </author>
     <content src="index.html" />
-	<platform name="firefoxos">
-        <icon src="icons/glowing_bear_60x60.png" width="60" height="60" />
-	</platform>
     <access origin="*" />
-    <platform name="android">
-        <icon src="icons/glowing_bear_192x192.png" density="xxxhdpi" />
-        <icon src="icons/glowing_bear_144x144.png" density="xxhdpi" />
-        <icon src="icons/glowing_bear_96x96.png" density="xhdpi" />
-        <icon src="icons/glowing_bear_72x72.png" density="hdpi" />
-        <icon src="icons/glowing_bear_48x48.png" density="mdpi" />
-        <preference name="SplashScreen" value="splash" />
-        <preference name="SplashScreenDelay" value="5000" />
-        <preference name="FadeSplashScreenDuration" value="500"/>
-    </platform>
     <platform name="ios">
         <icon src="icon.png" />
-
         <icon gap:platform="ios" height="180" src="res/icons/ios/icon-60-3x.png" width="180" />
         <icon gap:platform="ios" height="60" src="res/icons/ios/icon-60.png" width="60" />
         <icon gap:platform="ios" height="120" src="res/icons/ios/icon-60-2x.png" width="120" />
@@ -40,29 +26,24 @@
         <icon gap:platform="ios" height="58" src="res/icons/ios/icon-small-2x.png" width="58" />
         <icon gap:platform="ios" height="50" src="res/icons/ios/icon-50.png" width="50" />
         <icon gap:platform="ios" height="100" src="res/icons/ios/icon-50-2x.png" width="100" />
-
-        <splash src="main.png" />
-
-        <splash gap:platform="ios" height="480" src="res/screens/ios/screen-iphone-portrait.png" width="320" />
-        <splash gap:platform="ios" height="960" src="res/screens/ios/screen-iphone-portrait-2x.png" width="640" />
-        <splash gap:platform="ios" height="1024" src="res/screens/ios/screen-ipad-portrait.png" width="768" />
-        <splash gap:platform="ios" height="2048" src="res/screens/ios/screen-ipad-portrait-2x.png" width="1536" />
-        <splash gap:platform="ios" height="768" src="res/screens/ios/screen-ipad-landscape.png" width="1024" />
-        <splash gap:platform="ios" height="1536" src="res/screens/ios/screen-ipad-landscape-2x.png" width="2048" />
-        <splash gap:platform="ios" height="1136" src="res/screens/ios/screen-iphone-568h-2x.png" width="640" />
-        <splash gap:platform="ios" height="1334" src="res/screens/ios/screen-iphone-portrait-667h.png" width="750" />
-        <splash gap:platform="ios" height="2208" src="res/screens/ios/screen-iphone-portrait-736h.png" width="1242" />
-        <splash gap:platform="ios" height="1242" src="res/screens/ios/screen-iphone-landscape-736h.png" width="2208" />
-
-
-
-      <preference name="StatusBarOverlaysWebView" value="false" />
-      <preference name="StatusBarBackgroundColor" value="#000000" />
-      <preference name="StatusBarStyle" value="lightcontent" />
-
-      <preference name="DisallowOverscroll" value="true" />
-      <preference name="KeyboardShrinksView" value="true" />
-      <preference name="HideKeyboardFormAccessoryBar" value="true" />
-
+        <splash src="res/screen/ios/Default@2x~iphone~anyany.png" />
+        <splash src="res/screen/ios/Default@2x~iphone~comany.png" />
+        <splash src="res/screen/ios/Default@2x~iphone~comcom.png" />
+        <splash src="res/screen/ios/Default@3x~iphone~anyany.png" />
+        <splash src="res/screen/ios/Default@3x~iphone~anycom.png" />
+        <splash src="res/screen/ios/Default@3x~iphone~comany.png" />
+        <splash src="res/screen/ios/Default@2x~ipad~anyany.png" />
+        <splash src="res/screen/ios/Default@2x~ipad~comany.png" />
+        <preference name="StatusBarOverlaysWebView" value="false" />
+        <preference name="StatusBarBackgroundColor" value="#000000" />
+        <preference name="StatusBarStyle" value="lightcontent" />
+        <preference name="DisallowOverscroll" value="true" />
+        <preference name="KeyboardShrinksView" value="true" />
+        <preference name="HideKeyboardFormAccessoryBar" value="true" />
+        <preference name="orientation" value="portrait" />
     </platform>
+    <plugin name="cordova-plugin-splashscreen" spec="~5.0.2" />
+    <plugin name="cordova-plugin-inappbrowser" spec="~2.0.2" />
+    <plugin name="cordova-plugin-statusbar" spec="~2.4.1" />
+    <plugin name="de.appplant.cordova.plugin.local-notification" spec="~0.8.5" />
 </widget>
